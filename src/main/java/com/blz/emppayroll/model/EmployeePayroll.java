@@ -23,18 +23,6 @@ public class EmployeePayroll {
 	public EmployeePayroll() {
 	}
 
-//	public EmployeePayroll(long id, EmployeePayrollDTO employeePayrollDTO) {
-//		this.id = new Date().getTime();
-////		this.id = id;
-//		this.name = employeePayrollDTO.name;
-//		this.departMent = employeePayrollDTO.departMent;
-//		this.gender = employeePayrollDTO.gender;
-//		this.salary = employeePayrollDTO.salary;
-//		this.startDate = employeePayrollDTO.startDate;
-//		this.profileUrl = employeePayrollDTO.profileUrl;
-//		this.notes = employeePayrollDTO.notes;
-//	}
-
 	public EmployeePayroll(String name, String[] departMent, String gender, long salary, String startDate,
 			String profileUrl, String notes) {
 		this.name = name;
@@ -109,39 +97,5 @@ public class EmployeePayroll {
 	public void setNotes(String notes) {
 		this.notes = notes;
 	}
-
-//	private int employeeId;
-//	private String name;
-//	private long salary;
-//
-//	public EmployeePayroll(int employeeId, EmployeePayrollDTO empPayrollDTO) {
-//		this.employeeId = employeeId;
-//		this.name = empPayrollDTO.name;
-//		this.salary = empPayrollDTO.salary;
-//	}
-//
-//	public int getEmployeeId() {
-//		return employeeId;
-//	}
-//
-//	public void setEmployeeId(int employeeId) {
-//		this.employeeId = employeeId;
-//	}
-//
-//	public String getName() {
-//		return name;
-//	}
-//
-//	public void setName(String name) {
-//		this.name = name;
-//	}
-//
-//	public long getSalary() {
-//		return salary;
-//	}
-//
-//	public void setSalary(long salary) {
-//		this.salary = salary;
-//	}
 
 }

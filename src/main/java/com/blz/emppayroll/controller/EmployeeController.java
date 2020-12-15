@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.blz.emppayroll.model.EmployeePayroll;
 import com.blz.emppayroll.service.IEmployeePayrollService;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 public class EmployeeController {
 //	@Autowired
@@ -41,7 +41,7 @@ public class EmployeeController {
 		return employeePayrollService.createEmployeePayrollData(employee);
 	}
 
-	@PutMapping("/update/{empId}")
+	@PutMapping("employee/update/{empId}")
 	public EmployeePayroll updateEmployeePayrollData(@PathVariable("empId") int empId,
 			@RequestBody EmployeePayroll empPayroll) {
 		return employeePayrollService.updateEmployeePayrollData(empId, empPayroll);
